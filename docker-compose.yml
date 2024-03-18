@@ -1,0 +1,44 @@
+version : '3'
+
+services:
+  php:
+    build: Config
+    volumes: 
+      - ./Exercises:/var/www/html
+      - /var/log/apache2/app:/var/log/apache2/
+    ports:
+      - '80:80'
+    networks:
+      - app_network
+
+  db:
+    image: mysql:8.3.0
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: my_db
+      MYSQL_USER: my_user
+      MYSQL_PASSWORD: my_pwd
+    ports:
+      - '3306:3306'
+    networks:
+      - app_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - '8080:80'
+    networks:
+      - app_network
+    depends_on:
+      - db
+
+networks:
+  app_network:
+
+volumes:
+  db_data:
