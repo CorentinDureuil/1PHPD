@@ -1,0 +1,44 @@
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#user_infos {
+    position: absolute;
+    top: 130px;
+    float: right;
+    margin-right: 150px;
+}
+
+table {
+    position: absolute;
+    top: 250px;
+    border-collapse : collapse;
+    width: 100%;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    width: 100px;
+    text-align: center;
+}
+
+#image_cart {
+    width: 100px;
+    height: 100px;
+}
+
+#blank_column {
+    border: none;
+}
+
+#total_price {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+

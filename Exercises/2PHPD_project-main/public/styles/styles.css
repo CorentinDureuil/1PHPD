@@ -1,0 +1,274 @@
+body {
+    background-color: #BBD2E1;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, p {
+    font-family: helvetica, sans serif;
+}
+
+.link:hover {
+    background-color: #BBD2E1;
+}
+
+.link {
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    color: white;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #213458;
+    margin-bottom: 25px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#onglet {
+    margin-left: 5%;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+}
+
+#home-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-description > h1 {
+    font-family: "Lucida Handwriting", "Lucida Console", monospace;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+#gif {
+    height: 30px;
+    width: 30px;
+}
+
+#presentation-img {
+    align-items: center;
+}
+
+#articlesContainer, #txtHint {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.articleContainer, .categoryContainer {
+    box-shadow: 10px 10px 5px #213458;
+    background-color: #213458;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: max-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+}
+
+#categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#articleContainer_image {
+    height: 280px;
+    width: 350px;
+}
+
+#categoryContainer_image {
+    height: 300px;
+    width: 400px;
+}
+
+button {
+    background-color: white;
+    width: max-content;
+    cursor: pointer;
+}
+
+input {
+    background-color: white;
+}
+
+#error {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+table {
+    border-collapse : collapse;
+    border-spacing: 100px;
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#border {
+    border: 2px solid black;
+
+}
+
+#blank_column {
+    border: none;
+}
+
+#total_price {
+    border: none;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#image_cart {
+    width: 100px;
+    height: 100px;
+}
+
+#pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination p {
+    margin-right: 20px;
+}
+
+#pagination a {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+#pagination_number {
+    color: black;
+}
+
+#no_border {
+    border: none;
+}
+
+#page_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#account-buttonsContainer, #display_state_cart, #payment_recap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#account-buttonsContainer button, #input-button {
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 400px;
+}
+
+#productContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#productImage {
+    margin-right: 8%;
+}
+
+#productImage img {
+    box-shadow: 10px 10px 5px #213458;
+    width: 500px;
+    height: 500px;
+}
+
+#productTitle{
+    text-decoration: underline;
+}
+
+#descriptionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form, #searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+label
+{
+    font-size: 18px;
+    display: block;
+    width: 400px;
+    float: left;
+}
+
+#buttonForm {
+    margin-left: 35%;
+}
+
+#error_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#action_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#orderResult table, #usersResult table {
+    width: 100%;
+}
+
+#orderResult td, #usersResult td {
+    width: 25%;
+}
