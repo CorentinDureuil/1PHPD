@@ -1,2 +1,0 @@
-<input id="input-button" type="button" value="Inscription" onclick="window.location.href = 'inscription.php';">
-<input id="input-button" type="button" value="Connexion" onclick="window.location.href = 'connection.php';">
